@@ -2,13 +2,13 @@
 
 
 <input type="text" #materias class="form-control" placeholder="Nome da Matéria">
-<button (click)="materia.add(input.value); input.value=''" class="btn btn-dark">Adicionar Matéria</button>
+<button (click)="materias.addMateria(input.value); input.value=''" class="btn btn-dark">Adicionar Matéria</button>
 <hr>
 
 <ul>
 <li *ngFor="let materia of materias.getMateria(), index as i">
-  {{materia.title}}
-  <span (click)="materia.remove(i)" style="cursor: pointer;">Remover</span>
+  {{materia.nome}}
+  <span (click)="materias.remove(i)">Remover</span>
 </li>
 </ul>
 
