@@ -1,25 +1,25 @@
 import { Injectable } from '@angular/core';
 
 interface Materias{
-  title: string;
+  nome: string;
 }
 
 @Injectable()
 export class ThiagoDisciplinasService {
-  list: Array<Materias> = [];
+  materias: Array<Materias> = [];
 
   constructor() { }
 
   getMateria(){
-    return this.list;
+    return this.materias;
   }
 
-  addMateria(title:string){
-    this.list.push({title});
+  addMateria(nome:string){
+    this.materias.push({nome});
   }
 
   removeMateria(index:number){
-    this.list.splice(index, 1)
+    this.materias.splice(index, 1)
   }
 
 }

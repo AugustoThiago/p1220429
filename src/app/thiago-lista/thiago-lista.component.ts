@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import  { ThiagoDisciplinasService } from '../thiago-disciplinas.service';
+
 
 @Component({
   selector: 'app-thiago-lista',
@@ -6,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./thiago-lista.component.css']
 })
 export class ThiagoListaComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit() {
