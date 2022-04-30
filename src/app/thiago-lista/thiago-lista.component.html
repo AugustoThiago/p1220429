@@ -1,16 +1,8 @@
 <h1>Lista Matérias</h1>
 
-
 <input type="text" #materias class="form-control" placeholder="Nome da Matéria">
-<button (click)="materias.addMateria(input.value); input.value=''" class="btn btn-dark">Adicionar Matéria</button>
+<!-- <button (click)="materias.addMateria(input.value); input.value=''" class="btn btn-dark">Adicionar Matéria</button> -->
 <hr>
-
-<ul>
-<li *ngFor="let materia of materias.getMateria(), index as i">
-  {{materia.nome}}
-  <span (click)="materias.remove(i)">Remover</span>
-</li>
-</ul>
 
 <table class="table table-hover table-borderless table-sm table-striped table-dark">
 <thead class="thead-dark">
@@ -34,5 +26,11 @@
     <td>Sexta-feira</td>
     <td>link</td>
   </tr>
+  <tr>
+  <th scope="row">#</th>
+  <!-- <td *ngFor="let materia of materias.getMateria(), index as i">{{materia.nome}}<span (click)="materias.removeMateria(i)">Remover</span></td> -->
+  <td>#</td>
+  <td>#</td>
+</tr>
 </tbody>
 </table>

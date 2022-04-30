@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 
-interface Materias{
+interface Materia{
   nome: string;
 }
 
 @Injectable()
 export class ThiagoDisciplinasService {
-  materias: Array<Materias> = [];
+  materias: Array<Materia> = [];
 
   constructor() { }
 
