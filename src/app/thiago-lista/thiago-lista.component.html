@@ -1,7 +1,7 @@
 <h1>Lista Matérias</h1>
 
 <input type="text" #materias class="form-control" placeholder="Nome da Matéria">
-<!-- <button (click)="materias.addMateria(input.value); input.value=''" class="btn btn-dark">Adicionar Matéria</button> -->
+<button class="btn btn-dark">Adicionar Matéria</button>
 <hr>
 
 <table class="table table-hover table-borderless table-sm table-striped table-dark">
@@ -28,7 +28,7 @@
   </tr>
   <tr>
   <th scope="row">#</th>
-  <!-- <td *ngFor="let materia of materias.getMateria(), index as i">{{materia.nome}}<span (click)="materias.removeMateria(i)">Remover</span></td> -->
+  <td *ngFor="let materia of materias.getMateria(), index as i">{{materia.nome}}<span (click)="materias.removeMateria(i)">Remover</span></td>
   <td>#</td>
   <td>#</td>
 </tr>
